@@ -1,0 +1,19 @@
+thresholds:
+  complexity: 10
+  loop_count: 5
+
+gpu:
+  enabled: true
+
+analyzer:
+  loop_threshold: 2
+  nested_loop_threshold: 1
+  
+optimizer:
+  enable_gpu: true
+  format_code: true
+  
+api:
+  host: "0.0.0.0"
+  port: 5000
+  debug: true
