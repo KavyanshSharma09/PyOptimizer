@@ -11,7 +11,7 @@ setup(
     install_requires=[
         'numpy',
         'cupy',
-        'flask'  # or any other web framework you plan to use for the API
+        'flask'  
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
