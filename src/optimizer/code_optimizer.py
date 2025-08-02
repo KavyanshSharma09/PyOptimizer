@@ -21,18 +21,18 @@ class CodeOptimizer:
 
         for node in ast.walk(tree):
             if isinstance(node, ast.For):
-                # Check for potential list comprehensions
+                
                 if isinstance(node.target, ast.Name) and isinstance(node.iter, ast.Call) and isinstance(node.iter.func, ast.Name) and node.iter.func.id == 'range':
                     suggestions.append(f"Consider using list comprehension for loop at line {node.lineno}")
 
-                # Check for numpy operations inside the loop
+                
                 for child in ast.walk(node):
                     if isinstance(child, ast.Call) and isinstance(child.func, ast.Attribute) and isinstance(child.func.value, ast.Name) and child.func.value.id == 'np':
                         suggestions.append(f"Consider vectorizing numpy operation at line {child.lineno}")
 
         return suggestions
 
-# Add this test code in main.py
+
 test_code = """
 import numpy as np
 
