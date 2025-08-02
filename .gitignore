@@ -1,4 +1,3 @@
-# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -20,14 +19,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# Virtual Environment
 venv/
 ENV/
-
-# VS Code
 .vscode/
 *.code-workspace
-
-# Misc
 .DS_Store
