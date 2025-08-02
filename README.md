@@ -93,6 +93,6 @@ Pull requests are welcome. Help improve loop analysis, AST support, or GPU conve
 🙋‍♂️ Author
 
 Developed by Kavyansh Sharma
-Email: kavyanshsharma.dev@gmail.com
+Email: kavyanshsharma2004@gmail.com
 B.Tech Computer Science | AI/ML Enthusiast | Developer Tools ArchitectLinkedIn
 
